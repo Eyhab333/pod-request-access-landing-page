@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Chivo", sans-serif;
+      }
+    </style>
+    <title>Frontend Mentor | Pod request access landing page</title>
+  </head>
+  <body>
+    <main>
+      <div class="bg-pattern-dots hide-on-mobile">
+        <img src="./assets/desktop/bg-pattern-dots.svg" alt="dots" />
+      </div>
+      <div class="logo">
+        <img src="./assets/desktop/logo.svg" alt="logo" />
+      </div>
+      <section>
+        <h1>
+          Publish your podcasts <br />
+          <span>everywhere.</span>
+        </h1>
+        <p>
+          Upload your audio to Pod with a single click. We’ll then distribute
+          your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts
+          and more!
+        </p>
+        <div class="on-mobile-flex-direction-column-reverse">
+          <div class="form-container">
+            <form action="#">
+              <input
+                type="email"
+                name="email"
+                id="email-field"
+                required
+                placeholder="Email address"
+                autocomplete="email"
+              />
+              <span id="email-error-message"></span>
+              <button id="submit-button" type="submit" onclick="validateEmail()">Request Access</button>
+            </form>
+          </div>
+          <div role="list" class="logos-flex-container">
+            <div role="listitem" class="spotify">
+              <img src="./assets/desktop/spotify.svg" alt="spotify" />
+            </div>
+            <div role="listitem" class="apple">
+              <img src="./assets/desktop/apple-podcast.svg" alt="apple" />
+            </div>
+            <div role="listitem" class="google">
+              <img src="./assets/desktop/google-podcasts.svg" alt="google" />
+            </div>
+            <div role="listitem" class="pocket">
+              <img src="./assets/desktop/pocket-casts.svg" alt="pocket" />
+            </div>
+          </div>
+        </div>
+        <div class="desktop-and-tablet-space-bottom"></div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
