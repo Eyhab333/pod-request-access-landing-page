@@ -234,9 +234,6 @@ p {
     box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.497913);
   }
 
-  .desktop-and-tablet-space-bottom {
-    display: none;
-  }
 }
 
 /*############ for-tablet-portrait-up ##############*/
@@ -365,10 +362,6 @@ p {
     line-height: 28px;
     width: 443px;
     margin-bottom: 40px;
-  }
-
-  .desktop-and-tablet-space-bottom {
-    height: 230px;
   }
 
   input,
